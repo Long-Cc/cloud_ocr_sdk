@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
    s.name         = "OcrSDK"
-   s.version      = "1.0.8"
+   s.version      = "1.0.8.1"
    s.platform     = :ios, "11.0"
    s.summary  = 'frameworks and bundle resources for youtu mobile hdr'
    s.homepage = 'https://github.com/Long-Cc/cloud_ocr_sdk.git'
    s.license  = 'freely'
    s.source = { 
-      "http" => "https://ai-sdk-release-1254418846.cos.ap-guangzhou.myqcloud.com/ocr/1.0.8/sdk/Ocr_SDK_iOS.zip" 
+    :git => 'https://github.com/Long-Cc/cloud_ocr_sdk.git' ,:tag => "#{s.version}"
    }
    s.static_framework = true
    s.compiler_flags = "-ObjC"
